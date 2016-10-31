@@ -210,7 +210,7 @@ angular.module('dangle')
                                })
                                .attr('text-anchor', findAnchor)
                                .text(function(d) {
-                                   return d.value > 999 ? ( d.value/1000).toFixed(1) + 'k' : d.value + 'p';
+                                   return d.value > 999 ? ( d.value/1000).toFixed(1) + 'k' : d.value;
                                });
 
                            percentLabels.enter().append("text")
@@ -231,7 +231,7 @@ angular.module('dangle')
                                })
                                .attr('text-anchor', findAnchor)
                                .text(function(d){
-                                   return d.value > 999 ? ( d.value/1000).toFixed(1) + 'k' : d.value + 'p';
+                                   return d.value > 999 ? ( d.value/1000).toFixed(1) + 'k' : d.value;
                                })
                                .each(function(d) {this._current = d;});
                          
